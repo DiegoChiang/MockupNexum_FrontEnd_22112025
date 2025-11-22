@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es" data-theme="nexum">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nexum | Menú de Formularios</title>
+  <link rel="icon" href="assets/logo_ico.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="app app--menu">
+  <header class="app-header app-header--sticky">
+    <div class="brand">
+      <img src="assets/logo_ico.png" alt="Nexum" class="brand__logo" />
+      <div class="brand__text">
+        <h1 class="brand__title">Nexum — Formularios SIG</h1>
+        <p class="brand__subtitle">Selecciona un formulario para registrar información</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="index.html" class="btn btn--ghost">Salir</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Maestros -->
+    <section class="section">
+      <h2 class="section__title">Maestros</h2>
+      <div class="grid">
+        <a class="tile" href="pages/cliente.html">Cliente</a>
+        <a class="tile" href="pages/contratista.html">Contratista</a>
+        <a class="tile" href="pages/supervisor.html">Supervisor</a>
+        <a class="tile" href="pages/proyecto.html">Proyecto</a>
+      </div>
+    </section>
+
+    <!-- Vínculos -->
+    <section class="section">
+      <h2 class="section__title">Vínculos</h2>
+      <div class="grid">
+        <a class="tile" href="pages/contratista-proyecto.html">Contratista en Proyecto</a>
+        <a class="tile" href="pages/asignacion-supervisor.html">Asignación de Supervisor</a>
+      </div>
+    </section>
+
+    <!-- Operación diaria -->
+    <section class="section">
+      <h2 class="section__title">Operación diaria</h2>
+      <div class="grid">
+        <a class="tile" href="pages/reporte-diario.html">Reporte Diario</a>
+        <a class="tile" href="pages/no-conformidad.html">No Conformidad</a>
+      </div>
+    </section>
+
+    <!-- RFIs -->
+    <section class="section">
+      <h2 class="section__title">RFIs</h2>
+      <div class="grid">
+        <a class="tile" href="pages/rfi.html">Registro de RFI</a>
+      </div>
+    </section>
+
+    <!-- Planes del Contratista -->
+    <section class="section">
+      <h2 class="section__title">Planes del Contratista</h2>
+      <div class="grid">
+        <a class="tile" href="pages/plan-contratista.html">Plan del Contratista</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>© <span id="year"></span> Nexum Ingeniería S.A.C. · SIG</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contratista en Proyecto | Nexum SIG</title>
+    <link rel="icon" href="../assets/logo_ico.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app app--page">
+    <header class="app-header app-header--sticky">
+      <div class="brand">
+        <img src="../assets/logo_ico.png" class="brand__logo" alt="Nexum" />
+        <div class="brand__text">
+          <h1 class="brand__title">Contratista en Proyecto</h1>
+          <p class="brand__subtitle">Vínculo M:N</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn btn--ghost" href="../menu.html">Volver al menú</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="card card--elevated">
+        <form class="form" action="../menu.html" method="get">
+          <div class="form__group">
+            <label class="form__label" for="RucContratista"
+              >RUC Contratista</label
+            >
+            <input
+              id="RucContratista"
+              name="RucContratista"
+              class="input"
+              maxlength="11"
+              pattern="\d{11}"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="IdProyecto">Proyecto</label>
+            <input
+              id="IdProyecto"
+              name="IdProyecto"
+              class="input"
+              type="number"
+              min="1"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="Rol">Rol</label>
+            <input
+              id="Rol"
+              name="Rol"
+              class="input"
+              placeholder="Principal / Subcontrata"
+            />
+          </div>
+          <div class="form__actions">
+            <a href="../menu.html" class="btn btn--ghost">Cancelar</a>
+            <button class="btn btn--primary">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="app-footer">
+      <small>© 2025 Nexum Ingeniería S.A.C. · SIG</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cliente | Nexum SIG</title>
+    <link rel="icon" href="../assets/logo_ico.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app app--page">
+    <header class="app-header app-header--sticky">
+      <div class="brand">
+        <img src="../assets/logo_ico.png" class="brand__logo" alt="Nexum" />
+        <div class="brand__text">
+          <h1 class="brand__title">Cliente</h1>
+          <p class="brand__subtitle">Maestro de clientes</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn btn--ghost" href="../menu.html">Volver al menú</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="card card--elevated">
+        <form action="../menu.html" method="get" class="form">
+          <div class="form__group">
+            <label class="form__label" for="Ruc">RUC</label>
+            <input
+              id="Ruc"
+              name="Ruc"
+              type="text"
+              class="input"
+              maxlength="11"
+              pattern="\d{11}"
+              required
+              placeholder="11 dígitos"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="Nombre">Nombre</label>
+            <input
+              id="Nombre"
+              name="Nombre"
+              type="text"
+              class="input"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="Direccion">Dirección</label>
+            <input id="Direccion" name="Direccion" type="text" class="input" />
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="Telefono">Teléfono</label>
+              <input
+                id="Telefono"
+                name="Telefono"
+                type="text"
+                class="input"
+                maxlength="9"
+                pattern="\d{9}"
+                placeholder="9 dígitos"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="Email">Email</label>
+              <input id="Email" name="Email" type="email" class="input" />
+            </div>
+          </div>
+          <div class="form__actions">
+            <a href="../menu.html" class="btn btn--ghost">Cancelar</a>
+            <button class="btn btn--primary">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

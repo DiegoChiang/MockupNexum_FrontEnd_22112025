@@ -1,0 +1,181 @@
+:root {
+  --brand: #0f172a;
+  --accent: #0ea5a5;
+  --ink: #0f172a;
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --muted: #64748b;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body.app {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(90deg, var(--brand), #1e293b);
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.app-header--sticky {
+  position: sticky;
+  top: 0;
+}
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.brand__logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+}
+.brand__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+.brand__subtitle {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+.container {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+}
+.card--elevated {
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+}
+.card__title {
+  margin: 0 0 12px 0;
+}
+.form {
+  display: grid;
+  gap: 12px;
+}
+.form__group {
+  display: grid;
+  gap: 6px;
+}
+.form__group--inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form__label {
+  font-size: 14px;
+  color: #334155;
+}
+.input,
+.textarea,
+.select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  font: inherit;
+}
+.textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn--primary {
+  background: var(--accent);
+  color: #083344;
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--brand);
+  border-color: #e2e8f0;
+}
+.btn--full {
+  width: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.section {
+  margin-top: 24px;
+}
+.section__title {
+  margin: 0 0 8px 0;
+  color: #334155;
+}
+.tile {
+  display: block;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+}
+.tile:hover {
+  border-color: #94a3b8;
+  background: #f8fafc;
+}
+.app-footer {
+  padding: 24px 16px;
+  text-align: center;
+  color: #64748b;
+}
+.muted {
+  color: #64748b;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+
+/* Mejorar contraste del botón fantasma en el header oscuro */
+.app-header .btn--ghost {
+  color: #e2e8f0; /* texto claro */
+  border-color: rgba(255, 255, 255, 0.45);
+}
+.app-header .btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.65);
+}
+.app-header .btn--ghost:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}

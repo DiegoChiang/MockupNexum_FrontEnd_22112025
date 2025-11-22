@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Supervisor | Nexum SIG</title>
+    <link rel="icon" href="../assets/logo_ico.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app app--page">
+    <header class="app-header app-header--sticky">
+      <div class="brand">
+        <img src="../assets/logo_ico.png" class="brand__logo" alt="Nexum" />
+        <div class="brand__text">
+          <h1 class="brand__title">Supervisor</h1>
+          <p class="brand__subtitle">Maestro de supervisores</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="btn btn--ghost" href="../menu.html">Volver al menú</a>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="card card--elevated">
+        <form action="../menu.html" method="get" class="form">
+          <div class="form__group">
+            <label class="form__label" for="Dni">DNI</label>
+            <input
+              id="Dni"
+              name="Dni"
+              type="text"
+              class="input"
+              maxlength="8"
+              pattern="\d{8}"
+              required
+              placeholder="8 dígitos"
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="Nombres">Nombres</label>
+            <input
+              id="Nombres"
+              name="Nombres"
+              type="text"
+              class="input"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="Apellidos">Apellidos</label>
+            <input id="Apellidos" name="Apellidos" type="text" class="input" />
+          </div>
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="Telefono">Teléfono</label>
+              <input
+                id="Telefono"
+                name="Telefono"
+                type="text"
+                class="input"
+                maxlength="9"
+                pattern="\d{9}"
+                placeholder="9 dígitos"
+              />
+            </div>
+            <div class="form__group">
+              <label class="form__label" for="Email">Email</label>
+              <input id="Email" name="Email" type="email" class="input" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="Especialidad">Especialidad</label>
+            <input
+              id="Especialidad"
+              name="Especialidad"
+              type="text"
+              class="input"
+            />
+          </div>
+          <div class="form__actions">
+            <a href="../menu.html" class="btn btn--ghost">Cancelar</a>
+            <button class="btn btn--primary">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
