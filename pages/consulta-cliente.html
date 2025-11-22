@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="nexum">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Consulta de Clientes | Nexum SIG</title>
+    <link rel="icon" href="../assets/logo_ico.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="app app--page">
+    <header class="app-header app-header--sticky">
+      <div class="brand">
+        <a href="../menu.html" class="brand__link" title="Volver al menú">
+          <img src="../assets/logo_ico.png" alt="Nexum" class="brand__logo" />
+        </a>
+        <div class="brand__text">
+          <h1 class="brand__title">Nexum — Formularios SIG</h1>
+          <p class="brand__subtitle">Consulta y mantenimiento de clientes</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="../menu.html" class="btn btn--ghost">Volver al menú</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card card--elevated">
+        <h2 class="card__title">Editar / Borrar Clientes</h2>
+        <form action="#" method="get" class="form">
+          <div class="form__group">
+            <label for="filtro_cliente" class="form__label"
+              >Buscar por RUC o Nombre</label
+            >
+            <input
+              id="filtro_cliente"
+              name="filtro_cliente"
+              type="text"
+              class="input"
+              placeholder="Ej. 20123456789 o Constructora Andina"
+            />
+          </div>
+          <div class="form__group form__group--inline">
+            <button type="submit" class="btn btn--primary">Buscar</button>
+          </div>
+        </form>
+
+        <p class="muted mt-16">
+          Resultados cargados desde <strong>data</strong>.
+        </p>
+
+        <div class="mt-16">
+          <table>
+            <thead>
+              <tr>
+                <th>RUC</th>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>Email</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+              <tr>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>data</td>
+                <td>
+                  <button type="button" class="btn btn--ghost">Editar</button>
+                  <button type="button" class="btn btn--ghost">Borrar</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <small>© <span id="year"></span> Nexum Ingeniería S.A.C. · SIG</small>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
